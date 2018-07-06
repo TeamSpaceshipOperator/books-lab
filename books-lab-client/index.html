@@ -13,14 +13,29 @@
     </head>
     <body class="container">
       <h1>Team Spaceship Operator Books Lab</h1>
+      <br>
 
-      <button class="get-books">Get Books</button>
+      <button class="get-books">Get All Books</button>
+      <br>
+      <br>
+      <form id="get-book-form">
+              <input class="inputReset" name="book[ID]" placeholder="Book ID" type="number">
+              <button type="submit">Get Book by ID</button>
+              <p></p>
+            </form>
 
       <form id="add-book-form">
               <input class="inputReset" name="book[title]" placeholder="Title" type="text">
               <input class="inputReset" name="book[author]" placeholder="Author" type="text">
-              <button type="submit">Add Book</button>
+              <button type="submit">Add New Book</button>
               <p class='addBookMessage'></p>
+            </form>
+
+      <form id="delete-book-form">
+              <input class="inputReset" name="book[ID]" placeholder="Book ID" type="number">
+              <button type="submit">Delete Book</button>
+              <p class='deleteBookMessage'></p>
+            </form>
 
         <div class="content row">
         </div>
