@@ -1,0 +1,18 @@
+{{#each books as |book|}}
+  {{log book}}
+
+  <!-- {{> partial}}
+  Don't uncomment yet -->
+
+ <!-- Developers, why are we using data-id and not just id? -->
+  <ul data-id="{{book.id}}"> <small>Author: {{book.author}}</small> <small>Title: {{book.title}}</small></ul>
+  <li>
+    {{#if book.title}}
+      {{book.author}}
+    {{else}}
+      No title provided.
+    {{/if}}
+    <button id ="removeBook.{{book.id}}" class ="removeButton">Remove</button>
+  </li>
+
+{{/each}
