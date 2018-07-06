@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Books Lab</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -11,7 +11,18 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-    <body>
-      <h1>Browser Template</h1>
+    <body class="container">
+      <h1>Team Spaceship Operator Books Lab</h1>
+
+      <button class="get-books">Get Books</button>
+
+      <form id="add-book-form">
+              <input class="inputReset" name="book[title]" placeholder="Title" type="text">
+              <input class="inputReset" name="book[author]" placeholder="Author" type="text">
+              <button type="submit">Add Book</button>
+              <p class='addBookMessage'></p>
+
+        <div class="content row">
+        </div>
     </body>
 </html>
